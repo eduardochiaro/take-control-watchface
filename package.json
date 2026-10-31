@@ -1,0 +1,64 @@
+{
+  "name": "take-control-watchface",
+  "author": "Eduardo Chiaro",
+  "version": "1.1.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.1.0",
+    "pebble-fctx": "^1.6.5"
+  },
+  "pebble": {
+    "displayName": "Take Control",
+    "uuid": "a700bc7f-33a6-476a-b37e-9796563ead3f",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "WEATHER",
+      "UNITS",
+      "ANIM_HOUR",
+      "ANIM_FLICK",
+      "ANIM_LOAD"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "raw",
+          "name": "FONT",
+          "file": "adventor.ffont"
+        }
+      ]
+    },
+    "capabilities": [
+      "configurable",
+      "location"
+    ]
+  },
+  "devDependencies": {
+    "opentype.js": "^2.0.0",
+    "pebble-fctx-compiler": "^1.2.2"
+  },
+  "scripts": {
+    "build": "pebble build",
+    "emulator": "npm run build && pebble install --emulator",
+    "phone": "npm run build && pebble install --phone",
+    "config": "pebble emu-app-config --emulator",
+    "screenshot": "bash scripts/screenshot.sh",
+    "test": "node test/weather.test.js",
+    "font": "node scripts/gen-svg-font.js resources/adventor-heavy.otf resources/adventor.svg adventor \" -/0123456789:<>ABCDEFGHIJKLMNOPQRSTUVWXYZ°\" && fctx-compiler resources/adventor.svg"
+  }
+}

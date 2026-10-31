@@ -1,0 +1,29 @@
+[
+  { "type": "heading", "defaultValue": "Take Control" },
+  {
+    "type": "section",
+    "items": [
+      { "type": "heading", "defaultValue": "Weather" },
+      {
+        "type": "select",
+        "messageKey": "UNITS",
+        "label": "Temperature",
+        "defaultValue": "c",
+        "options": [
+          { "label": "Celsius", "value": "c" },
+          { "label": "Fahrenheit", "value": "f" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      { "type": "heading", "defaultValue": "Animation" },
+      { "type": "toggle", "messageKey": "ANIM_HOUR", "label": "On the hour", "defaultValue": true },
+      { "type": "toggle", "messageKey": "ANIM_FLICK", "label": "On wrist flick", "defaultValue": true },
+      { "type": "toggle", "messageKey": "ANIM_LOAD", "label": "On load", "defaultValue": true }
+    ]
+  },
+  { "type": "submit", "defaultValue": "Save" }
+]
