@@ -7,7 +7,7 @@
 #define MOCK_H 220
 #define APEX_Y 143
 #define PYRAMID_R 109    // base radius; off the screen at rest, so its corners are cut
-#define ANIM_MS 2000
+#define ANIM_MS 3000
 #define ANIM_SPIN_DEG 90
 
 #define DATE_Y PBL_IF_ROUND_ELSE(36, 25)

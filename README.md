@@ -11,7 +11,7 @@ On the hour, wrist flick, or back from the menu, the black pyramid will descend 
 ![Chalk 1](assets/chalk_1.png)
 ![Diorite 1](assets/diorite_1.png)
 ![Emery 1](assets/emery_1.png)
-![DioFlintite 1](assets/flint_1.png)
+![Flint 1](assets/flint_1.png)
 ![Emery 1](assets/emery_1.png)
 
 
